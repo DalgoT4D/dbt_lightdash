@@ -1,0 +1,63 @@
+models:
+  - name: visitsmodel
+    description: ''
+    meta:
+
+      group_details:
+        location_details:
+          label: Location details
+          description: Fields pertaining to location details
+
+        patient_details:
+          label: Patient details
+          description: Fields pertaining to patient details
+
+    columns:
+      - name: id
+        description: 'The unique ID of the visit'
+
+      - name: date
+        description: 'The date of the visit'
+        meta:
+          dimension:
+            type: date
+          metrics:
+            max_visit_date:
+              type: date
+              sql: MAX(${TABLE}.date)
+            min_visit_date:
+              type: date
+              sql: MIN(${TABLE}.date)
+
+      - name: name
+        description: 'The name of the patient'
+        meta:
+          metrics:
+            patient_count:
+              type: count_distinct
+              description: Number of distinct patients
+              groups: ['patient_details']
+
+      - name: gender
+        description: 'The gender of the patient'
+        groups: ['patient_details']
+        meta:
+          metrics:
+            gender_count:
+              type: count
+              description: Counts of each gender
+              groups: ['patient_details']
+
+      - name: district
+        description: 'The district of the patient'
+        meta:
+          metrics:
+            district_count:
+              type: count_distinct
+              description: Number of distinct districts
+
+      - name: age_group
+        description: 'The age group of the patient'
+
+      - name: health_worker
+        description: 'The ID of the health worker'

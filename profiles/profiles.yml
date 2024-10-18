@@ -1,0 +1,79 @@
+config: {}
+dbtrepo:
+  outputs:
+    rohit:
+      keyfile_json:
+        auth_provider_x509_cert_url: https://www.googleapis.com/oauth2/v1/certs
+        auth_uri: https://accounts.google.com/o/oauth2/auth
+        client_email: ddpui-42@ddp-ui-95e38.iam.gserviceaccount.com
+        client_id: '102018435266080196127'
+        client_x509_cert_url: https://www.googleapis.com/robot/v1/metadata/x509/ddpui-42%40ddp-ui-95e38.iam.gserviceaccount.com
+        private_key: '-----BEGIN PRIVATE KEY-----
+
+          MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDwHymzyl3GR+Vm
+
+          8LH0/0JFeGjQ7wHHM/vz3Ute8vOhByYoJSet8qvS+FplYPgBnDfegR76tTGYE0j3
+
+          CgpldMJZENJu5iv5VszMuwXQH9t4bH7ljt4k8KoidS8ZR1S1RT9yUUDqLHAItJnP
+
+          Bo22flT0Xbxp6V7OZpjFMyKugTRSfz8AjjvMFJ9k410f927RE3FqqF2AIzf8YhZE
+
+          y/1X3bjLDam71ZJDAhEnLccNVSY5SEUqQA25bXu8mxaFdmQx6yJiQLbQ2lw/hEP3
+
+          rE21upjBxZgw56mWDNkB6WsfNMn2JL5oX5yiQjS8jFENz5sCTLbw5c0K0w6eOCZc
+
+          Y/n9+gYDAgMBAAECggEAdLKId2bZtTQa0rEWo51srUuMEUKfCBuFDusVJsOHUNKj
+
+          Ii6QfrLp+8GUWSHL1iiAZIQ3NJvbyu9QbjM0g0M/8r5ArwHxDCA5ryQTeqcI6Bk+
+
+          gL0yzBwka1OtPKlUizZo09uWY1iOaESxXZJvS+pQymRF3ek7mK72/xvPdqS3c4GP
+
+          9Il4LcH25G9UP1hJ19ZC3KWGVihIkNoaTh/NwsHD7hFcDGESAB7U/l6v8smdn5bb
+
+          jtcJcLDtrmD75qrqNJa6WjZ253d5V6mC4f5DYYQE7wR3VXeJWwArtMxYhTLRohaK
+
+          m+UhFnSlyCdXTN9/n/V0Gv9rhKuHtGQjvCTDqtX/+QKBgQD4FkZmQzvA+3Zhrm6E
+
+          7D94aTqYXHnAGodiyhII11b3udcwhhhMwh4J/HZ0T6wss/FpYdi7EKDfMHRjhERy
+
+          QFk89vNIVIJ6dCYzHdgS8zarosQjEs+/ZaqwkmD65+S42UKp+/kcsXZV1p0WTS28
+
+          1wef8PwwH242sFKcQVqHDjKCWwKBgQD3x9ks56k0dWhtbj4/T9nnHV9LacS//XMr
+
+          C08Zzch5yJZQ+d3eZnf4Ylm/W0OLqG923Jv3conv4eDb1Icj33QsfNZ9sHWx35lg
+
+          6bO28h5YFaSLaxP/d9ZIZrkwAwJ7Ul8iatXNzLfKfhBx7ru4fD1SLz7X0F4FRhT1
+
+          wyZ7bGmLeQKBgAi032ufWG2BZbov4PkRQXj8WG4YcL1pMO8qoE9nH0o6X274hcnL
+
+          1joLfiy+zxASkJpeMLj/8GVk0fDcJ3rK/1bAY/FZ5epeQSjyFy8zEewcHj4M3vWc
+
+          n8zqljS4BrLmDQziJu/22mxQx9qMgtppwX6/elpGABwzO/L36DFtMiCZAoGBAKAW
+
+          4EtyFdHN9b2WV+OCDRCU2qgX20YMVCfAc8gBPADrR6tj9SSnYeX6bXAEYDzQg8vx
+
+          N1gGCfcSIr0FsJbN3fqMYeztYO2ewTNra3DNOCvDN//YHCCX5bv7mrTZjPXuv4a2
+
+          LhN8rFbJYoiqLWFB7EC4Q8seVlDj+dDb2HYwEnVJAoGBAJKbKQDa4s5A21Hc6mVh
+
+          wK6JMcKS4K6bT+43rrbjRQlejBopDl2OEyLXZk6YbthMMcjC3RZ82TZZcDp6IkPA
+
+          TVXyM/FabMg44VnK6M7J64I+nvtzfYS79TdfDF/sZ63lKNLY4ojBkqgHa2kDXnZn
+
+          YGmSpGs5ISr6gTU47ZfITuru
+
+          -----END PRIVATE KEY-----
+
+          '
+        private_key_id: a5dd2eb76c6cdbd11d27060bf563bf2abd07f32f
+        project_id: ddp-ui-95e38
+        token_uri: https://oauth2.googleapis.com/token
+        type: service_account
+        universe_domain: googleapis.com
+      location: asia-south1
+      method: service-account-json
+      project: ddp-ui-95e38
+      schema: rohit
+      threads: 4
+      type: bigquery
+  target: rohit
