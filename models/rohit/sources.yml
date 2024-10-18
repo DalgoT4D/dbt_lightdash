@@ -1,0 +1,24 @@
+version: 2
+
+sources:
+  - name: rohit
+    tables:
+      - name: visits
+        description: Visits table
+        columns:
+          - name: id
+            description: Unique identifier for the visit
+            tests:
+              - unique
+          - name: date
+            description: Date of the visit
+          - name: name
+            description: Date of the visit
+          - name: district
+            description: Date of the visit
+          - name: gender
+            description: Date of the visit
+          - name: health_worker
+            description: Date of the visit
+          - name: age_group
+            description: Date of the visit
